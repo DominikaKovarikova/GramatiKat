@@ -897,7 +897,7 @@ server <- function(input, output, session) {
     rownames(final_df3) <- 1:nrow(final_df3)
 
     if (c(lang) %in% c("en")) mylabelsx3 <- c(' Nom ', ' Gen ', ' Dat ', 'Nom', 'Gen', 'Dat')
-    else mylabelsx3 <- c('S1', 'S2', 'S3', 'P1', 'P2', 'P3')
+    else mylabelsx3 <- c('S1', 'S2', 'S3', 'P1', 'P2', 'P3', 'sdf')
     
     dfx3 %>% ggplot(aes(x=cisloosoba3, y=value)) +
       scale_x_discrete(labels= mylabelsx3) + 
