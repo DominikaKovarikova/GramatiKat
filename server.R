@@ -889,7 +889,7 @@ server <- function(input, output, session) {
     tmp <- input$changeLemma3; tmp <- input$changeCorpus2 # <- make chart reactive to buttons
     
     dfl3 <- sellemmar3$data
-    drops3 <- c("lemma","FQ")
+    drops3 <- c("lemma","O", "FQ")
     dfdrops3 <- dfl3[ , !(names(dfl3) %in% drops3)]
     final_df3 <- as.data.frame(t(dfdrops3))
     names(final_df3)[1] <- "value"
