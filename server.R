@@ -191,13 +191,13 @@ server <- function(input, output, session) {
     if (prefix_verbs == 'syn_v11') {prefix_verbs = paste0(prefix_verbs, '_15_20')}
     
     dfallrod3 <- read.table(paste0("data/", prefix_verbs, "_verb-100p.csv"), header = TRUE, sep = "\t", quote="\"")
-    drops3 <- c("rod")
+    drops3 <- c("rod", "O")
     dfall3 <- dfallrod3[ , !(names(dfallrod3) %in% drops3)]
     dfall3 <<- dfall3[order(dfall3$lemma),]
     clemmas3 <<- as.character(dfall3$lemma)
     
     dfallrod3 <- read.table(paste0("data/", prefix_verbs, "_verb-100p.csv"), header = TRUE, sep = "\t", quote="\"")
-    drops3 <- c("rod")
+    drops3 <- c("rod", "O")
     dfall3 <- dfallrod3[ , !(names(dfallrod3) %in% drops3)]
 
     dfallSP3 <- read.table(paste0("data/", prefix_verbs, "_verb-sp-100p.csv"), header = TRUE, sep = "\t", quote="\"")
