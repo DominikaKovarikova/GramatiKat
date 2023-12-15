@@ -817,80 +817,80 @@ localized_UI <- function(i18n, lang) {
                                    # ),
                                    # -----------------------------------------------------------------------------------
                                    tabPanel(i18n$t("Tabulky"),
-                                            tags$h1(),
-                                            div(i18n$t("tables_body1_2"), br(),
-                                                # i18n$t("tables_body2_2"), br(),
-                                                # i18n$t("tables_body3_2"), br(),
-                                                # i18n$t("tables_body4_2"), br(),
-                                                i18n$t("tables_body5_2"), br(),
-                                                i18n$t("tables_body6_2"),
-                                                style = "width: 1000px;"
-                                            ),
-                                            if (lang != 'cs') {
-                                              div(tags$p(""), fnCaseDescription(), tags$p(""), tags$p(i18n$translation_language), style = "width: 1000px;")
-                                            },
+                                            # tags$h1(),
+                                            # div(i18n$t("tables_body1_2"), br(),
+                                            #     # i18n$t("tables_body2_2"), br(),
+                                            #     # i18n$t("tables_body3_2"), br(),
+                                            #     # i18n$t("tables_body4_2"), br(),
+                                            #     i18n$t("tables_body5_2"), br(),
+                                            #     i18n$t("tables_body6_2"),
+                                            #     style = "width: 1000px;"
+                                            # ),
+                                            # if (lang != 'cs') {
+                                            #   div(tags$p(""), fnCaseDescription(), tags$p(""), tags$p(i18n$translation_language), style = "width: 1000px;")
+                                            # },
                                             
-                                            hr(),
-                                            div(id="data12sel", noseltext),
-                                            hr(),
+                                            # hr(),
+                                            # div(id="data12sel", noseltext),
+                                            # hr(),
                                             
-                                            hr(), hr(), hr(), h1('TestNahore'), hr(), hr(), hr(),
+                                            # hr(), hr(), hr(), h1('TestNahore'), hr(), hr(), hr(),
                                             
-                                            tabsetPanel(id = "chPanels22222", type="pills",
-                                                        # tabPanel(i18n$t("fullTabRodCisloPad2"),
-                                                        #          h1('TestTestTest fullTabRodCisloPad2'),
+                                            # tabsetPanel(id = "chPanels22222", type="pills",
+                                            #             # tabPanel(i18n$t("fullTabRodCisloPad2"),
+                                            #             #          h1('TestTestTest fullTabRodCisloPad2'),
 
-                                                        #          hr(),
-                                                        #          div(id="data12sel", noseltext),
-                                                        #          div(tags$p("sfddsfdsfodsf duof hdsuf ohdsouf hdsuf"),
-                                                        #          hr(),
+                                            #             #          hr(),
+                                            #             #          div(id="data12sel", noseltext),
+                                            #             #          div(tags$p("sfddsfdsfodsf duof hdsuf ohdsouf hdsuf"),
+                                            #             #          hr(),
 
-                                                        #          div(id="data12sel", noseltext),
+                                            #             #          div(id="data12sel", noseltext),
                                                                  
-                                                        #          tags$p(),
-                                                        #          tabPanel(i18n$t("Tabulky"),
-                                                        #                   tags$h1(),
-                                                        #                   DT::dataTableOutput('data12'),
-                                                        #                   h1(), br(), br(), br(), br(), br(), br(), br()
-                                                        #          )
-                                                        # ),
-                                                        tabPanel(i18n$t("fullTabRod2"),
-                                                                 h1('TestTestTest fullTabRod2'),
-                                                                 div(id="data12sel", noseltext),
+                                            #             #          tags$p(),
+                                            #             #          tabPanel(i18n$t("Tabulky"),
+                                            #             #                   tags$h1(),
+                                            #             #                   DT::dataTableOutput('data12'),
+                                            #             #                   h1(), br(), br(), br(), br(), br(), br(), br()
+                                            #             #          )
+                                            #             # ),
+                                            #             tabPanel(i18n$t("fullTabRod2"),
+                                            #                      h1('TestTestTest fullTabRod2'),
+                                            #                      div(id="data12sel", noseltext),
                                                                  
-                                                                 hr(),
-                                                                 div(id="data12sel", noseltext),
-                                                                 div(tags$p("sfddsfdsfodsf duof hdsuf ohdsouf hdsuf"),
-                                                                 hr(),
+                                            #                      hr(),
+                                            #                      div(id="data12sel", noseltext),
+                                            #                      div(tags$p("sfddsfdsfodsf duof hdsuf ohdsouf hdsuf"),
+                                            #                      hr(),
 
-                                                                 tags$p(),
-                                                                 tabPanel(i18n$t("Tabulky"), tags$h1(),
-                                                                          DT::dataTableOutput('dataAdjGender'),
-                                                                          h1(), br(), br(), br(), br(), br(), br(), br()
-                                                                 )
-                                                        ),
-                                                        tabPanel(i18n$t("fullTabCase2"),
-                                                                 tags$p(),
-                                                                 tabPanel(i18n$t("Tabulky"), tags$h1(),
-                                                                          DT::dataTableOutput('dataAdjCase'),
-                                                                          h1(), br(), br(), br(), br(), br(), br(), br()
-                                                                 )
-                                                        ),
-                                                        tabPanel(i18n$t("fullTabDegree2"),
-                                                                 tags$p(),
-                                                                 tabPanel(i18n$t("Tabulky"), tags$h1(),
-                                                                          DT::dataTableOutput('dataAdjDegree'),
-                                                                          h1(), br(), br(), br(), br(), br(), br(), br()
-                                                                 )
-                                                        ),
-                                                        tabPanel(i18n$t("fullTabNegation2"),
-                                                                 tags$p(),
-                                                                 tabPanel(i18n$t("Tabulky"), tags$h1(),
-                                                                          DT::dataTableOutput('dataAdjNegation'),
-                                                                          h1(), br(), br(), br(), br(), br(), br(), br()
-                                                                 )
-                                                        )
-                                            )
+                                            #                      tags$p(),
+                                            #                      tabPanel(i18n$t("Tabulky"), tags$h1(),
+                                            #                               DT::dataTableOutput('dataAdjGender'),
+                                            #                               h1(), br(), br(), br(), br(), br(), br(), br()
+                                            #                      )
+                                            #             ),
+                                            #             tabPanel(i18n$t("fullTabCase2"),
+                                            #                      tags$p(),
+                                            #                      tabPanel(i18n$t("Tabulky"), tags$h1(),
+                                            #                               DT::dataTableOutput('dataAdjCase'),
+                                            #                               h1(), br(), br(), br(), br(), br(), br(), br()
+                                            #                      )
+                                            #             ),
+                                            #             tabPanel(i18n$t("fullTabDegree2"),
+                                            #                      tags$p(),
+                                            #                      tabPanel(i18n$t("Tabulky"), tags$h1(),
+                                            #                               DT::dataTableOutput('dataAdjDegree'),
+                                            #                               h1(), br(), br(), br(), br(), br(), br(), br()
+                                            #                      )
+                                            #             ),
+                                            #             tabPanel(i18n$t("fullTabNegation2"),
+                                            #                      tags$p(),
+                                            #                      tabPanel(i18n$t("Tabulky"), tags$h1(),
+                                            #                               DT::dataTableOutput('dataAdjNegation'),
+                                            #                               h1(), br(), br(), br(), br(), br(), br(), br()
+                                            #                      )
+                                            #             )
+                                            # )
                                    )
 
                                    
