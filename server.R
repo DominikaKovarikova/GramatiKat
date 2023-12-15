@@ -156,7 +156,7 @@ server <- function(input, output, session) {
     dfall2 <- dfallrod2[ , !(names(dfallrod2) %in% drops2)]
     dfall2 <<- dfall2[order(dfall2$lemma),]
     clemmas2 <<- as.character(dfall2$lemma)
-    
+   
     # tochange: import Singular/Plural file previously extracted in python
     dfallSP2 <- read.table(paste0("data/", prefix_adjectives, "_adjective-sp-100p.csv"), header = TRUE, sep = "\t", quote="\"")
     dfallSP2 <<- dfallSP2[order(dfallSP2$lemma),]
@@ -1993,7 +1993,8 @@ for (var i = 0; i < tips.length; i++) {
 
   # table Data 1_2 (Tabulky)
   output$data12 <- DT::renderDataTable({
-    header <- fnCreateHeader()
+    #header <- fnCreateHeaderTest()
+    header <- fnCreateHeader1()
     dfallrodDF2 <- as.data.frame(dfallrod2)
     row.names(dfallrodDF2) <- NULL
     
