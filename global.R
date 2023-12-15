@@ -1,4 +1,4 @@
-############################################
+f############################################
 #                                          #
 #       GramatiKat - Dominika Kovarikova   #
 #                                          #
@@ -819,9 +819,9 @@ localized_UI <- function(i18n, lang) {
                                    tabPanel(i18n$t("Tabulky"),
                                             tags$h1(),
                                             div(i18n$t("tables_body1_2"), br(),
-                                                i18n$t("tables_body2_2"), br(),
-                                                i18n$t("tables_body3_2"), br(),
-                                                i18n$t("tables_body4_2"), br(),
+                                                # i18n$t("tables_body2_2"), br(),
+                                                # i18n$t("tables_body3_2"), br(),
+                                                # i18n$t("tables_body4_2"), br(),
                                                 i18n$t("tables_body5_2"), br(),
                                                 i18n$t("tables_body6_2"),
                                                 style = "width: 1000px;"
