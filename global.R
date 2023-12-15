@@ -833,11 +833,14 @@ localized_UI <- function(i18n, lang) {
                                             hr(),
                                             div(id="data12sel", noseltext),
                                             hr(),
-                                            h1('TestNahore'),
+                                            
+                                            hr(), hr(), hr(), h1('TestNahore'), hr(), hr(), hr(),
                                             
                                             tabsetPanel(id = "chPanels22222", type="pills",
                                                         tabPanel(i18n$t("fullTabRodCisloPad2"),
                                                                  h1('TestTestTest fullTabRodCisloPad2'),
+                                                                 div(id="data12sel", noseltext),
+                                                                 
                                                                  tags$p(),
                                                                  tabPanel(i18n$t("Tabulky"),
                                                                           tags$h1(),
@@ -847,6 +850,8 @@ localized_UI <- function(i18n, lang) {
                                                         ),
                                                         tabPanel(i18n$t("fullTabRod2"),
                                                                  h1('TestTestTest fullTabRod2'),
+                                                                 div(id="data12sel", noseltext),
+                                                                 
                                                                  tags$p(),
                                                                  tabPanel(i18n$t("Tabulky"), tags$h1(),
                                                                           DT::dataTableOutput('dataAdjGender'),
