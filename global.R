@@ -837,23 +837,23 @@ localized_UI <- function(i18n, lang) {
                                             hr(), hr(), hr(), h1('TestNahore'), hr(), hr(), hr(),
                                             
                                             tabsetPanel(id = "chPanels22222", type="pills",
-                                                        tabPanel(i18n$t("fullTabRodCisloPad2"),
-                                                                 h1('TestTestTest fullTabRodCisloPad2'),
+                                                        # tabPanel(i18n$t("fullTabRodCisloPad2"),
+                                                        #          h1('TestTestTest fullTabRodCisloPad2'),
 
-                                                                 hr(),
-                                                                 div(id="data12sel", noseltext),
-                                                                 div(tags$p("sfddsfdsfodsf duof hdsuf ohdsouf hdsuf"),
-                                                                 hr(),
+                                                        #          hr(),
+                                                        #          div(id="data12sel", noseltext),
+                                                        #          div(tags$p("sfddsfdsfodsf duof hdsuf ohdsouf hdsuf"),
+                                                        #          hr(),
 
-                                                                 div(id="data12sel", noseltext),
+                                                        #          div(id="data12sel", noseltext),
                                                                  
-                                                                 tags$p(),
-                                                                 tabPanel(i18n$t("Tabulky"),
-                                                                          tags$h1(),
-                                                                          DT::dataTableOutput('data12'),
-                                                                          h1(), br(), br(), br(), br(), br(), br(), br()
-                                                                 )
-                                                        ),
+                                                        #          tags$p(),
+                                                        #          tabPanel(i18n$t("Tabulky"),
+                                                        #                   tags$h1(),
+                                                        #                   DT::dataTableOutput('data12'),
+                                                        #                   h1(), br(), br(), br(), br(), br(), br(), br()
+                                                        #          )
+                                                        # ),
                                                         tabPanel(i18n$t("fullTabRod2"),
                                                                  h1('TestTestTest fullTabRod2'),
                                                                  div(id="data12sel", noseltext),
