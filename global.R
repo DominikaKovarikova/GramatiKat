@@ -548,7 +548,7 @@ localized_UI <- function(i18n, lang) {
                    tags$td(tags$h3(uiOutput("lemmaref2"))),
                    tags$td(tags$h3("\":")),
                    tags$td(div(" " , style = "width: 30px;")),
-                   tags$td(tags$h3("frekvenční pásmo \"")),
+                   tags$td(tags$h3("frekvenční pásmo ")),
                    tags$td(tags$h1(uiOutput("pokus")))
                  )
                )
@@ -943,7 +943,7 @@ localized_UI <- function(i18n, lang) {
                 tags$td(tags$h3(uiOutput("lemmaref3"))),
                 tags$td(tags$h3("\":")),
                 tags$td(div(" " , style = "width: 30px;")),
-                tags$td(tags$h3("frekvenční pásmo \"")),
+                tags$td(tags$h3("frekvenční pásmo ")),
                 tags$td(tags$h1(uiOutput("pokus 3")))
               )
             )
